@@ -1,5 +1,4 @@
 - content_for :head do
   = javascript_pack_tag 'users'
 
-= react_component 'nav', { posts_url: articles_path, users_url: users_path }
 = react_component 'users/list'

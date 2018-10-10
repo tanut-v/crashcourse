@@ -11,7 +11,7 @@ export default class UserList extends Component {
   }
    render() {
     return (
-      <Fragment>
+      <Layout>
         {
           this.state.data.map(data =>
             <div key={data.id}>
@@ -21,7 +21,7 @@ export default class UserList extends Component {
             </div>
           )
         }
-      </Fragment>
+      </Layout>
     )
   }
 }
