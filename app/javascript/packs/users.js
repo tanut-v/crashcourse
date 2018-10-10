@@ -1,3 +1,3 @@
-var componentRequireContext = require.context('components/users', true)
-var ReactRailsUJS = require('react_ujs')
+const componentRequireContext = require.context('components/users', true)
+const ReactRailsUJS = require('react_ujs')
 ReactRailsUJS.useContext(componentRequireContext)
