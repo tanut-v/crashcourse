@@ -1,10 +1,5 @@
 - content_for :head do
   = javascript_pack_tag 'articles'
 
-.nav
-  My App
-
-  = link_to "Posts", articles_path
-  = link_to "Users", users_path
-
+= react_component 'nav', { posts_url: articles_path, users_url: users_path }
 = react_component 'articles/list'
